@@ -366,10 +366,12 @@ def build_html(rows: list[dict]) -> str:
     template = env.from_string(INDEX_TEMPLATE)
 
     now = datetime.now(timezone.utc)
+    today = now.date()
     view = []
     for r in rows:
         cfs = r.get("cfs_close")            # timezone-aware UTC datetime, or None
         modality = r.get("modality", "in_person")
+        _end = r.get("main_end") or r.get("main_start")   # last day the event occupies
         view.append({
             "name": r["name"],
             "url": r.get("url") or "",
@@ -392,15 +394,17 @@ def build_html(rows: list[dict]) -> str:
             "precon_known": bool(r.get("precon_date")),
             "confidence": r.get("confidence", ""),
             "info": (r.get("info") or "").strip(),
+            "is_past": bool(_end and _end < today),
         })
 
+    upcoming = [r for r in view if not r["is_past"]]
     present_continents = [c for c in CONTINENTS if any(c in r["continents"] for r in view)]
-    open_count = sum(1 for r in view if r["cfs_open"])
+    open_count = sum(1 for r in upcoming if r["cfs_open"])
 
     return template.render(
         rows=view,
         continents=present_continents,
-        total=len(view),
+        total=len(upcoming),
         open_count=open_count,
         calendar_url=f"{SITE_URL}/calendar.ics" if SITE_URL else "",
         generated_at=datetime.now(timezone.utc).strftime("%d %b %Y, %H:%M UTC"),
