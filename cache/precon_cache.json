@@ -1,1 +1,162 @@
-{}
+{
+  "08dc643a2f8083fd": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2026-07-18",
+    "main_start": "2026-07-18",
+    "note": "Precon inferred to be the first day of the event due to 'Precon' tag and no explicit date given.",
+    "precon_date": "2026-07-17"
+  },
+  "1d5a6ad193491f02": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2026-08-08",
+    "main_start": "2026-08-08",
+    "note": "Precon inferred to be the first day of the event span, with main sessions on the subsequent day, based on the 'Precon' type tag.",
+    "precon_date": "2026-08-07"
+  },
+  "34c70b2ed37fa24c": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2026-05-13",
+    "main_start": "2026-05-12",
+    "note": "Precon inferred as the first day of the event based on the 'Precon' type tag.",
+    "precon_date": "2026-05-11"
+  },
+  "368659e4b83937e4": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2026-12-03",
+    "main_start": "2026-12-03",
+    "note": "Precon inferred as the first day of the event due to 'Precon' tag and two-day span.",
+    "precon_date": "2026-12-02"
+  },
+  "3be70f13e099a954": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2026-08-28",
+    "main_start": "2026-08-25",
+    "note": "Precon inferred as the first day of the event due to 'Precon' type tag and no explicit date.",
+    "precon_date": "2026-08-24"
+  },
+  "3c4a8e900c0ffaad": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2026-06-11",
+    "main_start": "2026-06-11",
+    "note": "Precon inferred as the first day of the event due to 'Precon' tag and two-day span.",
+    "precon_date": "2026-06-10"
+  },
+  "426b95d02814fc22": {
+    "confidence": "high",
+    "has_precon": true,
+    "main_end": "2026-09-25",
+    "main_start": "2026-09-25",
+    "note": "Pre-con and main session dates are explicitly stated in the information.",
+    "precon_date": "2026-09-24"
+  },
+  "47b107c2c4b43a2e": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2026-10-14",
+    "main_start": "2026-10-13",
+    "note": "Precon inferred to be the first day of the event span as no specific date was provided.",
+    "precon_date": "2026-10-12"
+  },
+  "4a4efdc354ac13e6": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2026-04-25",
+    "main_start": "2026-04-25",
+    "note": "Precon inferred as the first day, with the main conference on Saturday as per the event name.",
+    "precon_date": "2026-04-24"
+  },
+  "4be4a7ffe20b66c2": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2026-04-18",
+    "main_start": "2026-04-18",
+    "note": "Precon inferred to be the first day of the two-day event, with main sessions on the second day.",
+    "precon_date": "2026-04-17"
+  },
+  "5160b5db832118a0": {
+    "confidence": "high",
+    "has_precon": true,
+    "main_end": null,
+    "main_start": null,
+    "note": "The event itself is a precon/workshop day.",
+    "precon_date": "2026-09-28"
+  },
+  "644f0bce3a7a48b6": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2026-06-12",
+    "main_start": "2026-06-12",
+    "note": "Precon inferred as the first day of the two-day event.",
+    "precon_date": "2026-06-11"
+  },
+  "8069444267674489": {
+    "confidence": "high",
+    "has_precon": false,
+    "main_end": "2026-10-15",
+    "main_start": "2026-10-15",
+    "note": "The event is described as a single full-day event with no mention of a separate precon.",
+    "precon_date": null
+  },
+  "909880461cb1d7cc": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2026-06-04",
+    "main_start": "2026-06-04",
+    "note": "Precon inferred as the first day of the event span due to 'Precon' tag and two-day duration.",
+    "precon_date": "2026-06-03"
+  },
+  "a68aa060fa5ce61f": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2026-03-20",
+    "main_start": "2026-03-17",
+    "note": "Precon inferred to be the first day of the event span, as 'Precon' is in the type and 'Workshops' in the name, but no specific precon date is given.",
+    "precon_date": "2026-03-16"
+  },
+  "cc915baf93609944": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2026-11-11",
+    "main_start": "2026-11-10",
+    "note": "Precon inferred as the first day of the event span, with main sessions following.",
+    "precon_date": "2026-11-09"
+  },
+  "d1c6d2bd4d9ebcac": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2026-03-20",
+    "main_start": "2026-03-17",
+    "note": "Pre-con existence is mentioned, and its date is inferred as the first day of the event span.",
+    "precon_date": "2026-03-16"
+  },
+  "deca537d5965a151": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2026-10-10",
+    "main_start": "2026-10-10",
+    "note": "Precon inferred as the first day of the two-day event, with the main conference on the second day.",
+    "precon_date": "2026-10-09"
+  },
+  "ebe9b56fdcab444f": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2026-05-08",
+    "main_start": "2026-05-08",
+    "note": "Precon inferred as the first day of the event span, with main sessions on the second day.",
+    "precon_date": "2026-05-07"
+  },
+  "ff9d5fdbbeaa6c7f": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2026-04-21",
+    "main_start": "2026-04-21",
+    "note": "Precon inferred as the first day of the two-day event, with main sessions on the second day.",
+    "precon_date": "2026-04-20"
+  }
+}
