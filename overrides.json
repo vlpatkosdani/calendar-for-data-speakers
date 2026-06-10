@@ -1,0 +1,9 @@
+{
+  "_comment": "Hand-curated fixes, keyed by exact EventName. Anything here wins over the Gemini extraction. Dates are YYYY-MM-DD. Use this for events whose precon date isn't in the feed at all. Example below is illustrative; delete or edit freely.",
+  "SQLDay Lite 2026": {
+    "precon_date": "2026-09-24",
+    "main_start": "2026-09-25",
+    "main_end": "2026-09-25",
+    "has_precon": true
+  }
+}

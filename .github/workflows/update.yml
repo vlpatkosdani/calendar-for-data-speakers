@@ -1,0 +1,67 @@
+name: Build & deploy calendar
+
+on:
+  schedule:
+    - cron: "0 6 * * *"      # daily ~06:00 UTC (GitHub cron is best-effort, not exact)
+  workflow_dispatch: {}        # lets you run it manually from the Actions tab
+  push:
+    branches: [main]
+    paths-ignore:
+      - "cache/**"             # don't re-trigger on the bot's own cache commits
+
+permissions:
+  contents: write              # commit the updated precon cache back to the repo
+  pages: write                 # deploy to GitHub Pages
+  id-token: write              # required by deploy-pages
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Build calendar
+        env:
+          PYTHONUNBUFFERED: "1"
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash' }}
+          SITE_URL: ${{ vars.SITE_URL || format('https://{0}.github.io/{1}', github.repository_owner, github.event.repository.name) }}
+        run: python build.py
+
+      - name: Commit updated precon cache
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain cache/)" ]]; then
+            git add cache/
+            git commit -m "chore: update precon cache [skip ci]"
+            git push
+          else
+            echo "No cache changes."
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
