@@ -127,6 +127,14 @@
     "note": "Precon inferred to be the first day of the event span, as 'Precon' is in the type and 'Workshops' in the name, but no specific precon date is given.",
     "precon_date": "2026-03-16"
   },
+  "b06ddf4cd2521b48": {
+    "confidence": "high",
+    "has_precon": true,
+    "main_end": null,
+    "main_start": null,
+    "note": "The event is explicitly tagged as 'Precon' and 'Workshops', indicating its entire duration is dedicated to pre-conference activities.",
+    "precon_date": "2027-03-08"
+  },
   "cc915baf93609944": {
     "confidence": "medium",
     "has_precon": true,
