@@ -119,6 +119,14 @@
     "note": "Precon inferred as the first day of the event span due to 'Precon' tag and two-day duration.",
     "precon_date": "2026-06-03"
   },
+  "950bb48279c61fa2": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2027-02-04",
+    "main_start": "2027-02-03",
+    "note": "Precon inferred as the first day of the event from the 'Precon' type tag.",
+    "precon_date": "2027-02-02"
+  },
   "a68aa060fa5ce61f": {
     "confidence": "medium",
     "has_precon": true,
