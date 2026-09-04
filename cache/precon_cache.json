@@ -95,6 +95,14 @@
     "note": "The event is tagged as 'Precon' and spans only one day, so the entire day is considered the precon.",
     "precon_date": "2026-10-17"
   },
+  "62bdab7b814cf8bc": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2027-04-16",
+    "main_start": "2027-04-16",
+    "note": "Precon inferred to be the first day of the two-day event, with main sessions on the second day.",
+    "precon_date": "2027-04-15"
+  },
   "644f0bce3a7a48b6": {
     "confidence": "medium",
     "has_precon": true,
