@@ -135,6 +135,14 @@
     "note": "Precon inferred as the first day of the event from the 'Precon' type tag.",
     "precon_date": "2027-02-02"
   },
+  "a23858fe7ce7fe28": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": "2027-05-12",
+    "main_start": "2027-05-11",
+    "note": "Precon inferred as the first day of the event based on the 'Precon' type tag and no explicit date.",
+    "precon_date": "2027-05-10"
+  },
   "a68aa060fa5ce61f": {
     "confidence": "medium",
     "has_precon": true,
