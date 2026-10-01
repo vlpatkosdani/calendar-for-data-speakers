@@ -15,6 +15,14 @@
     "note": "Precon inferred to be the first day of the event span, with main sessions on the subsequent day, based on the 'Precon' type tag.",
     "precon_date": "2026-08-07"
   },
+  "24ab141767d9011d": {
+    "confidence": "medium",
+    "has_precon": true,
+    "main_end": null,
+    "main_start": null,
+    "note": "Precon inferred as the single event day from 'type' tag, with no separate main sessions specified.",
+    "precon_date": "2027-06-12"
+  },
   "34c70b2ed37fa24c": {
     "confidence": "medium",
     "has_precon": true,
