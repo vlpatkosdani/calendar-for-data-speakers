@@ -199,6 +199,14 @@
     "note": "Precon inferred as the first day of the event span, with main sessions on the second day.",
     "precon_date": "2026-05-07"
   },
+  "f320431c54ae21bc": {
+    "confidence": "high",
+    "has_precon": true,
+    "main_end": "2027-03-13",
+    "main_start": "2027-03-13",
+    "note": "The text explicitly states 'Friday full day, hands-on workshops' and 'Saturday community day'.",
+    "precon_date": "2027-03-12"
+  },
   "ff9d5fdbbeaa6c7f": {
     "confidence": "medium",
     "has_precon": true,
